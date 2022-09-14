@@ -1,0 +1,64 @@
+.icons-chain {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+
+  &__chain {
+    display: flex;
+    align-items: center;
+    margin: 0 55px;
+  }
+
+  &__dotted-line {
+    display: flex;
+    gap: 20px;
+  }
+
+  &__dot {
+    width: 6px;
+    height: 6px;
+    background: #C4C4C4;
+    border-radius: 50%;
+  }
+
+  &__icon {
+    &-container {
+      width: 100px;
+      height: 100px;
+      margin: 0 15px;
+      background: #3E9CDC;
+      border: 5px solid #286690;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &:first-child {
+        margin-left: 0;
+      }
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  &__descriptions {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    &-description {
+      font-family: 'Lato', sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+      color: #FFFFFF;
+      min-height: 80px;
+      width: 200px;
+      text-align: center;
+    }
+  }
+}
