@@ -1,0 +1,38 @@
+.button {
+  display: block;
+  text-decoration: none;
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  padding: 12.5px;
+  background: #3E9CDC;
+  border: 1px solid #FFFFFF;
+  border-radius: 4px;
+  min-width: 183px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: .12s ease-in all;
+
+  &:hover {
+    color: #3E9CDC;
+    background: #FFFFFF;
+    border: 1px solid #3E9CDC;
+  }
+
+  &_white {
+    color: #2A2B30;
+    background: #FFFFFF;
+    border: 1px solid #6F6D7B;
+
+    &:hover {
+      color: #FFFFFF;
+      background: #6F6D7B;
+      border: 1px solid #6F6D7B;
+    }
+  }
+}
