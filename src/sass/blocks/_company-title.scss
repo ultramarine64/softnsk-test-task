@@ -1,0 +1,28 @@
+.company-title {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 28px;
+  line-height: 33px;
+  text-transform: uppercase;
+  user-select: none;
+
+  &__link {
+    display: flex;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__prefix {
+    color: #FFFFFF;
+  }
+
+  &__dot {
+    color: #FFFFFF;
+  }
+
+  &__suffix {
+    color: #42A9ED;
+  }
+}
