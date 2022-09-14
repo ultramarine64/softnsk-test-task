@@ -65,3 +65,34 @@
     }
   }
 }
+
+@media screen and (max-width: 1400px) {
+  .icons-chain {
+    justify-content: space-between;
+
+    &__chain {
+      margin: 0;
+      justify-content: center;
+    }
+
+    &__dotted-line {
+      gap: 16px;
+    }
+
+    &__icon {
+      width: 45px;
+      height: 45px;
+
+      &-container {
+        width: 85px;
+        height: 85px;
+      }
+    }
+
+    &__item {
+      &-description {
+        width: 160px;
+      }
+    }
+  }
+}

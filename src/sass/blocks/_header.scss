@@ -12,5 +12,14 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    transition: .1s all;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .header {
+    &__container {
+      max-width: 1000px;
+    }
   }
 }

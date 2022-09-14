@@ -1,6 +1,7 @@
 .main-info {
   height: 850px;
   background: url("../images/main_bg.jpg") no-repeat;
+  background-position: right;
 
   &__container {
     max-width: 1172px;
@@ -9,6 +10,7 @@
     flex-direction: column;
     gap: 80px;
     padding-top: 203px;
+    transition: .1s all;
   }
 
   &__title {
@@ -21,6 +23,7 @@
     line-height: 58px;
     text-transform: uppercase;
     width: 780px;
+    transition: .1s all;
 
     &-regular {
       color: #000000;
@@ -35,5 +38,17 @@
     display: flex;
     justify-content: start;
     gap: 30px;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .main-info {
+    &__container {
+      max-width: 1000px;
+    }
+
+    &__title {
+      width: 580px;
+    }
   }
 }

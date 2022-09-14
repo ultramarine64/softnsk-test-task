@@ -9,6 +9,7 @@
     display: flex;
     align-items: center;
     gap: 40px;
+    transition: .1s all;
   }
 
   &__copyright {
@@ -79,5 +80,30 @@
     width: 1px;
     height: 18px;
     background: #C3C3C3;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .footer {
+    &__container {
+      max-width: 1000px;
+      gap: 30px;
+    }
+
+    &__services {
+      gap: 30px;
+
+      &-item {
+        gap: 8px;
+      }
+    }
+
+    &__socials {
+      gap: 30px;
+
+      &-link {
+        gap: 8px;
+      }
+    }
   }
 }
