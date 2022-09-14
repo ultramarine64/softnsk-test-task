@@ -49,4 +49,9 @@ gulp.task('images', function() {
         .pipe(browserSync.stream());
 });
 
-gulp.task('default', gulp.parallel('watch', 'server', 'html', 'styles', 'scripts', 'images'));
+gulp.task('fonts', function() {
+    return gulp.src('src/fonts/**/*')
+        .pipe(gulp.dest('dist/fonts'))
+});
+
+gulp.task('default', gulp.parallel('watch', 'server', 'html', 'styles', 'scripts', 'images', 'fonts'));
