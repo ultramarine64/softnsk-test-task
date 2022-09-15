@@ -122,3 +122,38 @@
   }
 }
 
+@media screen and (max-width: 992px) {
+  .icons-chain {
+    &__dotted-line {
+      gap: 11px;
+    }
+
+    &__dot {
+      width: 5px;
+      height: 5px;
+
+      &:nth-child(5) {
+        display: none;
+      }
+    }
+
+    &__icon {
+      width: 36px;
+      height: 36px;
+
+      &-container {
+        width: 65px;
+        height: 65px;
+        border-width: 3px;
+      }
+    }
+
+    &__item {
+      &-description {
+        width: 120px;
+        font-size: 13px;
+        line-height: normal;
+      }
+    }
+  }
+}

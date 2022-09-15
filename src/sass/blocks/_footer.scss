@@ -132,3 +132,58 @@
     }
   }
 }
+
+@media screen and (max-width: 992px) {
+  .footer {
+    height: 60px;
+
+    &__container {
+      max-width: 100%;
+      margin: 0 5vw;
+      gap: 16px;
+      justify-content: center;
+    }
+
+    &__copyright {
+      font-size: 12px;
+      width: 220px;
+      white-space: normal;
+    }
+
+    &__services {
+      gap: 16px;
+
+      &-item {
+        gap: 5px;
+
+        &-img {
+          width: 18px;
+          height: 18px;
+        }
+
+        &-name {
+          font-size: 12px;
+          line-height: 15px;
+        }
+      }
+    }
+
+    &__socials {
+      gap: 16px;
+
+      &-link {
+        gap: 5px;
+
+        &-img {
+          height: 18px;
+          width: 18px;
+        }
+
+        &-text {
+          font-size: 12px;
+          line-height: 15px;
+        }
+      }
+    }
+  }
+}

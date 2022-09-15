@@ -60,3 +60,28 @@
     }
   }
 }
+
+@media screen and (max-width: 992px) {
+  .main-info {
+    background: linear-gradient(to right, rgba(39, 39, 51, 0.65) 0 100%), url("../images/main_bg.jpg") no-repeat;
+    background-position: right;
+    height: 680px;
+
+    &__container {
+      max-width: 100%;
+      margin: 0 5vw;
+      padding-top: 150px;
+      gap: 60px;
+    }
+
+    &__title {
+      font-size: 44px;
+      line-height: 50px;
+      width: 520px;
+
+      &-regular {
+        color: #FFFFFF;
+      }
+    }
+  }
+}

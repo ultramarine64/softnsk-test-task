@@ -43,3 +43,16 @@
     }
   }
 }
+
+@media screen and (max-width: 992px) {
+  .menu {
+    &__list {
+      gap: 15px;
+    }
+
+    &__link {
+      font-size: 11px;
+    }
+  }
+}
+
