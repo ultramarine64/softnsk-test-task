@@ -107,3 +107,28 @@
     }
   }
 }
+
+@media screen and (max-width: 1200px) {
+  .footer {
+    &__container {
+      max-width: 900px;
+      gap: 20px;
+    }
+
+    &__services {
+      gap: 20px;
+
+      &-item {
+        gap: 6px;
+      }
+    }
+
+    &__socials {
+      gap: 20px;
+
+      &-link {
+        gap: 6px;
+      }
+    }
+  }
+}

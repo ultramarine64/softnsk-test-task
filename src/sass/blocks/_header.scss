@@ -23,3 +23,11 @@
     }
   }
 }
+
+@media screen and (max-width: 1200px) {
+  .header {
+    &__container {
+      max-width: 900px;
+    }
+  }
+}

@@ -5,6 +5,7 @@
     list-style-type: none;
     margin: 0;
     padding: 0;
+    transition: .1s all;
 
     &-item {
       margin: 0;
@@ -31,6 +32,14 @@
     &:hover,
     &:active {
       color: #43ABF0;
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .menu {
+    &__list {
+      gap: 30px;
     }
   }
 }

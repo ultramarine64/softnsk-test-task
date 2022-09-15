@@ -96,3 +96,29 @@
     }
   }
 }
+
+@media screen and (max-width: 1200px) {
+  .icons-chain {
+    &__dotted-line {
+      gap: 12px;
+    }
+
+    &__icon {
+      width: 42px;
+      height: 42px;
+
+      &-container {
+        width: 80px;
+        height: 80px;
+        border: 4px solid #286690;
+      }
+    }
+
+    &__item {
+      &-description {
+        width: 150px;
+      }
+    }
+  }
+}
+

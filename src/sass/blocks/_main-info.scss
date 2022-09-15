@@ -52,3 +52,11 @@
     }
   }
 }
+
+@media screen and (max-width: 1200px) {
+  .main-info {
+    &__container {
+      max-width: 900px;
+    }
+  }
+}
