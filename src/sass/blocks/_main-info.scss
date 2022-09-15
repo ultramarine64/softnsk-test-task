@@ -43,8 +43,17 @@
 
 @media screen and (max-width: 1400px) {
   .main-info {
+    background: linear-gradient(to right, rgba(39, 39, 51, 0.65) 0 100%), url("../images/main_bg.jpg") no-repeat;
+    background-position: right;
+
     &__container {
       max-width: 1000px;
+    }
+
+    &__title {
+      &-regular {
+        color: #FFFFFF;
+      }
     }
 
     &__title {
@@ -63,8 +72,7 @@
 
 @media screen and (max-width: 992px) {
   .main-info {
-    background: linear-gradient(to right, rgba(39, 39, 51, 0.65) 0 100%), url("../images/main_bg.jpg") no-repeat;
-    background-position: right;
+    background-size: cover;
     height: 680px;
 
     &__container {
@@ -78,10 +86,19 @@
       font-size: 44px;
       line-height: 50px;
       width: 520px;
+    }
+  }
+}
 
-      &-regular {
-        color: #FFFFFF;
-      }
+@media screen and (max-width: 768px) {
+  .main-info {
+    height: 600px;
+    background-position: right;
+
+    &__container {
+      padding-top: 120px;
+      align-items: center;
+      text-align: center;
     }
   }
 }

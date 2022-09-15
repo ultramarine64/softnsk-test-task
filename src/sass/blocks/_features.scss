@@ -45,23 +45,35 @@
   }
 }
 
+@media screen and (max-width: 1400px) {
+  .features {
+    &__description {
+      color: #FFFFFF;
+    }
+
+    &__list {
+      &-item {
+        color: #FFFFFF;
+
+        &::before {
+          background: #FFFFFF;
+        }
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 992px) {
   .features {
     &__description {
       font-size: 18px;
       line-height: 20px;
-      color: #FFFFFF;
     }
 
     &__list {
       &-item {
         font-size: 18px;
         line-height: 20px;
-        color: #FFFFFF;
-
-        &::before {
-          background: #FFFFFF;
-        }
       }
     }
   }
