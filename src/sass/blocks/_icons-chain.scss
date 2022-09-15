@@ -1,18 +1,22 @@
 .icons-chain {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 20px;
+  align-items: start;
+  margin: 0 auto;
 
-  &__chain {
+  &__item {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    margin: 0 auto;
+    width: 100px;
+    margin: 0 15px;
+    gap: 20px;
   }
 
   &__dotted-line {
     display: flex;
     gap: 20px;
+    margin-top: 50px;
+    transform: translateY(-50%);
   }
 
   &__dot {
@@ -22,88 +26,66 @@
     border-radius: 50%;
   }
 
+  &__description {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    width: 200px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+
   &__icon {
     width: 55px;
     height: 55px;
 
-    &-description {
-      display: none;
-      font-family: 'Lato', sans-serif;
-      font-style: normal;
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 19px;
-      color: #FFFFFF;
-      width: 150px;
-      text-align: center;
-    }
-
     &-container {
       width: 100px;
       height: 100px;
-      margin: 0 15px;
       background: #3E9CDC;
       border: 5px solid #286690;
       border-radius: 50%;
       display: flex;
       align-items: center;
       justify-content: center;
-
-      &:first-child {
-        margin-left: 0;
-      }
-      &:last-child {
-        margin-right: 0;
-      }
-    }
-  }
-
-  &__descriptions {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  &__item {
-    &-description {
-      font-family: 'Lato', sans-serif;
-      font-style: normal;
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 19px;
-      color: #FFFFFF;
-      min-height: 80px;
-      width: 200px;
-      text-align: center;
     }
   }
 }
 
 @media screen and (max-width: 1400px) {
   .icons-chain {
-    justify-content: space-between;
-
-    &__chain {
-      margin: 0;
-      justify-content: center;
+    &__item {
+      width: 90px;
+      margin: 0 15px;
+      gap: 18px;
     }
 
-    &__dotted-line {
-      gap: 16px;
-    }
-
-    &__icon {
-      width: 45px;
-      height: 45px;
-
-      &-container {
-        width: 85px;
-        height: 85px;
+    &__dot {
+      &:last-child {
+        display: none;
       }
     }
 
-    &__item {
-      &-description {
-        width: 160px;
+    &__dotted-line {
+      gap: 18px;
+      margin-top: 45px;
+    }
+
+    &__description {
+      width: 165px;
+    }
+
+    &__icon {
+      width: 50px;
+      height: 50px;
+
+      &-container {
+        width: 90px;
+        height: 90px;
       }
     }
   }
@@ -111,13 +93,26 @@
 
 @media screen and (max-width: 1200px) {
   .icons-chain {
+    &__item {
+      width: 80px;
+      margin: 0 14px;
+      gap: 16px;
+    }
+
     &__dotted-line {
-      gap: 12px;
+      gap: 16px;
+      margin-top: 40px;
+    }
+
+    &__description {
+      width: 150px;
+      font-size: 15px;
+      line-height: 17px;
     }
 
     &__icon {
-      width: 42px;
-      height: 42px;
+      width: 44px;
+      height: 44px;
 
       &-container {
         width: 80px;
@@ -125,28 +120,32 @@
         border: 4px solid #286690;
       }
     }
-
-    &__item {
-      &-description {
-        width: 150px;
-      }
-    }
   }
 }
 
 @media screen and (max-width: 992px) {
   .icons-chain {
+    &__item {
+      width: 70px;
+      margin: 0 13px;
+      gap: 15px;
+    }
+
     &__dotted-line {
-      gap: 11px;
+      gap: 15px;
+      margin-top: 35px;
     }
 
     &__dot {
-      width: 5px;
-      height: 5px;
-
-      &:nth-child(5) {
+      &:first-child {
         display: none;
       }
+    }
+
+    &__description {
+      width: 100px;
+      font-size: 14px;
+      line-height: 17px;
     }
 
     &__icon {
@@ -154,17 +153,9 @@
       height: 36px;
 
       &-container {
-        width: 65px;
-        height: 65px;
-        border-width: 3px;
-      }
-    }
-
-    &__item {
-      &-description {
-        width: 120px;
-        font-size: 13px;
-        line-height: normal;
+        width: 70px;
+        height: 70px;
+        border: 4px solid #286690;
       }
     }
   }
@@ -172,54 +163,78 @@
 
 @media screen and (max-width: 768px) {
   .icons-chain {
+    flex-direction: column;
+    align-items: center;
+
+    &__item {
+      flex-direction: column;
+      align-items: center;
+      width: 120px;
+      margin: 0 15px;
+      gap: 20px;
+    }
+
     &__dotted-line {
-      margin: 10px 0;
+      flex-direction: column;
+      gap: 28px;
+      margin: 25px 0;
+      transform: none;
     }
 
     &__dot {
-      width: 6px;
-      height: 6px;
-    }
+      width: 8px;
+      height: 8px;
 
-    &__icon {
-      width: 55px;
-      height: 55px;
-
-      &-container {
-        width: 100px;
-        height: 100px;
-        border: 5px solid #286690;
-        margin: 0;
-
-        &:first-child {
-          margin: 0;
-        }
-        &:last-child {
-          margin: 0;
-        }
+      &:first-child {
+        display: block;
       }
 
-      &-description {
+      &:last-child {
         display: block;
       }
     }
 
-    &__chain {
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      margin: 0;
-      gap: 8px;
+    &__description {
+      font-size: 20px;
+      line-height: 24px;
+      width: 200px;
     }
 
-    &__dotted-line {
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
+    &__icon {
+      width: 70px;
+      height: 70px;
+
+      &-container {
+        width: 120px;
+        height: 120px;
+        border: 7px solid #286690;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .icons-chain {
+    &__item {
+      width: 110px;
+      margin: 0 14px;
     }
 
-    &__descriptions {
-      display: none;
+    &__description {
+      font-size: 18px;
+      line-height: 22px;
+      width: 200px;
+    }
+
+    &__icon {
+      width: 65px;
+      height: 65px;
+
+      &-container {
+        width: 110px;
+        height: 110px;
+        border: 6px solid #286690;
+      }
     }
   }
 }
