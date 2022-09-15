@@ -1,5 +1,6 @@
 
 .select-menu {
+  grid-area: input_select;
   cursor: pointer;
   position: relative;
 
@@ -99,5 +100,31 @@
 
   &__option-label.selected {
     color: #42A9ED;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .select-menu {
+    &__header {
+      font-size: 15px;
+    }
+
+    &__options-container {
+      top: 48px;
+
+      &_active {
+        height: 170px;
+      }
+    }
+
+    &__options-list {
+      width: calc(100% - 8px);
+      height: calc(170px - 6px);
+    }
+
+    &__option-label {
+      padding: 7px 0;
+      font-size: 15px;
+    }
   }
 }

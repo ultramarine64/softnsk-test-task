@@ -98,3 +98,75 @@
     }
   }
 }
+
+@media screen and (max-width: 992px) {
+  .form {
+    gap: 20px;
+
+    &__button {
+      font-size: 15px;
+      line-height: 18px;
+    }
+
+    &__input {
+      font-size: 15px;
+      line-height: 18px;
+    }
+
+    &__file {
+      &-label {
+        font-size: 15px;
+        line-height: 18px;
+        gap: 8px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .form {
+    gap: 20px;
+
+    &__button {
+      font-size: 15px;
+      line-height: 18px;
+    }
+
+    &__input {
+      font-size: 15px;
+      line-height: 18px;
+    }
+
+    &__file {
+      &-label {
+        font-size: 15px;
+        line-height: 18px;
+        gap: 8px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .form {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "input_email  input_name"
+                         "input_select input_file"
+                         "slider       slider"
+                         "submit       submit";
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .form {
+    align-self: center;
+    width: 80%;
+    grid-template-columns: 1fr;
+    grid-template-areas: "input_select"
+                         "input_email"
+                         "input_name"
+                         "input_file"
+                         "slider"
+                         "submit";
+  }
+}

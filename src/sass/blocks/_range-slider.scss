@@ -1,5 +1,6 @@
 .range-slider {
   width: 100%;
+  height: 48px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -40,6 +41,7 @@
   &__text-container {
     display: flex;
     justify-content: space-between;
+    gap: 10px;
   }
 
   &__caption {
@@ -52,11 +54,48 @@
   }
 
   &__value {
+    text-align: right;
     font-family: 'Lato', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 22px;
     color: #FFFFFF;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .range-slider {
+    &__input {
+      &::-webkit-slider-thumb {
+        height: 24px;
+        width: 24px;
+        border: 3px solid #286690;
+      }
+
+      &::-moz-range-thumb {
+        height: 18px;
+        width: 18px;
+        border: 3px solid #286690;
+      }
+    }
+
+    &__caption {
+      font-size: 15px;
+      line-height: 18px;
+    }
+
+    &__value {
+      font-size: 15px;
+      line-height: 18px;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .range-slider {
+    &__value {
+      width: 25%;
+    }
   }
 }
