@@ -11,9 +11,15 @@
     grid-area: slider;
   }
 
-
   &__button {
     grid-area: submit;
+    margin-top: 20px;
+    height: 48px;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
 
     &:hover {
       cursor: pointer;
@@ -28,15 +34,27 @@
     border: 1px solid #FFFFFF;
     border-radius: 3px;
     padding: 12px 10px;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #272733;
+
+    &::-webkit-input-placeholder {
+      color: #272733;
+    }
+
+    &::-moz-placeholder {
+      color: #272733;
+      opacity: 1;
+    }
 
     &-email {
       grid-area: input_email;
     }
     &-name {
       grid-area: input_name;
-    }
-    &-select {
-      grid-area: input_select;
     }
   }
 
