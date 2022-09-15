@@ -1,0 +1,103 @@
+
+.select-menu {
+  cursor: pointer;
+  position: relative;
+
+  &__header {
+    height: 48px;
+    background: rgba(255, 255, 255, 0.85);
+    border: 1px solid #FFFFFF;
+    border-radius: 3px;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    user-select: none;
+    font-family: 'Lato', sans-serif;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+
+    &_active {
+      background: #3D4050;
+      border-radius: 3px 3px 0px 0px;
+      border: 1px solid #3D4050;
+      color: #FFFFFF;
+
+      & .select-menu__header-arrow {
+        background-image: url("../images/icons/arrow_up.svg");
+      }
+    }
+
+    &-arrow {
+      display: block;
+      width: 20px;
+      height: 20px;
+      background-image: url("../images/icons/arrow_down.svg");
+    }
+  }
+
+  &__options-container {
+    background: #272733;
+    display: none;
+    width: 100%;
+    border: 1px solid #3D4050;
+    position: absolute;
+    top: 48px;
+    left: 0;
+
+    &_active {
+      height: 180px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  &__options-list {
+    width: calc(100% - 8px);
+    height: calc(180px - 6px);
+    border: none;
+    outline: none;
+    background: #272733;
+    overflow-y: auto;
+
+    &::-webkit-scrollbar {
+      width: 7px;
+      background: #3D4050;
+      border-radius: 3px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      width: 7px;
+      height: 53px;
+      background: #3E9CDC;
+      border-radius: 3px;
+    }
+  }
+
+  &__option-label {
+    display: block;
+    padding: 7px 0;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    color: #FFFFFF;
+    user-select: none;
+
+    &:hover {
+      color: #42A9ED;
+      cursor: pointer;
+    }
+  }
+
+  &__option {
+    position: absolute;
+    left: -9999px;
+  }
+
+  &__option-label.selected {
+    color: #42A9ED;
+  }
+}

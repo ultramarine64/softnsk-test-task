@@ -132,7 +132,45 @@
           </div>
         </div>
         <form action="#" class="form">
-          <input placeholder="Выберите тип системы" name="system" type="text" class="form__input form__input__select">
+          <!-- @todo подумать над более красивой симуляцией селекта с возможностью кастомизации -->
+          <div class="select-menu">
+            <div class="select-menu__header">
+              <span class="select-menu__header-text">Выберите тип системы</span>
+              <span class="select-menu__header-arrow"></span>
+            </div>
+            <div class="select-menu__options-container">
+              <fieldset class="select-menu__options-list">
+                <label class="select-menu__option-label">
+                  <input class="select-menu__option" type="radio" name="select_value" value="loremipsum1"></input>
+                  Sed ut perspiciatis
+                </label>
+                <label class="select-menu__option-label">
+                  <input class="select-menu__option" type="radio" name="select_value" value="loremipsum2"></input>
+                  Nemo enim ipsam
+                </label>
+                <label class="select-menu__option-label">
+                  <input class="select-menu__option" type="radio" name="select_value" value="loremipsum3"></input>
+                  Et harum quidem
+                </label>
+                <label class="select-menu__option-label">
+                  <input class="select-menu__option" type="radio" name="select_value" value="loremipsum4"></input>
+                  Temporibus autem
+                </label>
+                <label class="select-menu__option-label">
+                  <input class="select-menu__option" type="radio" name="select_value" value="loremipsum5"></input>
+                  Itaque earum rerum
+                </label>
+                <label class="select-menu__option-label">
+                  <input class="select-menu__option" type="radio" name="select_value" value="loremipsum6"></input>
+                  Itaque earum rerum
+                </label>
+                <label class="select-menu__option-label">
+                  <input class="select-menu__option" type="radio" name="select_value" value="loremipsum7"></input>
+                  Itaque earum rerum
+                </label>
+              </fieldset>
+            </div>
+          </div>
           <input placeholder="Ваш e-mail" name="email" type="text" class="form__input form__input__email">
           <input placeholder="Ваше имя" name="username" type="text" class="form__input form__input__name">
           <div class="range-slider form__range-slider">
