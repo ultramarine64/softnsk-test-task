@@ -3,7 +3,7 @@
   font-style: normal;
   font-weight: 800;
   font-size: 28px;
-  line-height: 33px;
+  line-height: 0;
   text-transform: uppercase;
   user-select: none;
 
@@ -30,5 +30,11 @@
 @media screen and (max-width: 992px) {
   .company-title {
     font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .company-title {
+    font-size: 22px;
   }
 }

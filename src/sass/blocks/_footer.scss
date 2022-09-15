@@ -249,3 +249,46 @@
     }
   }
 }
+
+@media screen and (max-width: 576px) {
+  .footer {
+    height: 160px;
+
+    &__services {
+      gap: 18px;
+
+      &-item {
+        gap: 6px;
+
+        &-img {
+          width: 18px;
+          height: 18px;
+        }
+
+        &-name {
+          font-size: 14px;
+          line-height: 16px;
+          width: min-content;
+        }
+      }
+    }
+
+    &__socials {
+      gap: 18px;
+
+      &-link {
+        gap: 6px;
+
+        &-img {
+          height: 18px;
+          width: 18px;
+        }
+
+        &-text {
+          font-size: 14px;
+          line-height: 16px;
+        }
+      }
+    }
+  }
+}

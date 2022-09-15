@@ -49,7 +49,7 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 22px;
-
+    text-align: center;
     color: #BBBBBB;
   }
 }
@@ -119,6 +119,54 @@
     &__description {
       font-size: 16px;
       line-height: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .order-making {
+    &__container {
+      max-width: 520px;
+      padding-top: 80px;
+      padding-bottom: 90px;
+      gap: 80px;
+    }
+
+    &__text-container {
+      gap: 20px;
+    }
+
+    &__title {
+      font-size: 28px;
+      line-height: 30px;
+      width: 380px;
+    }
+
+    &__description {
+      font-size: 14px;
+      line-height: 18px;
+      width: 380px;
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .order-making {
+    &__container {
+      max-width: 520px;
+      gap: 80px;
+    }
+
+    &__title {
+      font-size: 28px;
+      line-height: 30px;
+      width: 300px;
+    }
+
+    &__description {
+      font-size: 14px;
+      line-height: 18px;
+      width: 300px;
     }
   }
 }
