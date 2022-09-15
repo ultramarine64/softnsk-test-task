@@ -56,6 +56,9 @@
 
 @media screen and (max-width: 1400px) {
   .order-making {
+    background-position: center;
+    background-size: cover;
+
     &__container {
       max-width: 1000px;
     }
@@ -63,6 +66,7 @@
     &__title {
       width: 580px;
     }
+
   }
 }
 
@@ -71,17 +75,11 @@
     &__container {
       max-width: 900px;
     }
-
-    background-position: 0 50%;
-    background-size: contain;
   }
 }
 
 @media screen and (max-width: 992px) {
   .order-making {
-    background-position: center;
-    background-size: cover;
-
     &__container {
       max-width: 715px;
       padding-top: 100px;

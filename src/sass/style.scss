@@ -13,7 +13,6 @@ body, p {
 }
 
 @import "base/fonts";
-@import "base/colors";
 @import "blocks/header";
 @import "blocks/company-title";
 @import "blocks/menu";
@@ -27,5 +26,3 @@ body, p {
 @import "blocks/select-menu";
 @import "blocks/range-slider";
 @import "blocks/footer";
-
-@import "media";
