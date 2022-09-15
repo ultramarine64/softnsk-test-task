@@ -131,6 +131,26 @@
             <span class="icons-chain__item-description">Excepteur sint occaecat cupidatat non proident</span>
           </div>
         </div>
+        <form action="#" class="form">
+          <input placeholder="Выберите тип системы" name="system" type="text" class="form__input form__input__select">
+          <input placeholder="Ваш e-mail" name="email" type="text" class="form__input form__input__email">
+          <input placeholder="Ваше имя" name="username" type="text" class="form__input form__input__name">
+          <div class="range-slider form__range-slider">
+            <div class="range-slider__text-container">
+              <span class="range-slider__caption">Sed ut perspiciatis, unde omnis iste natus</span>
+              <span class="range-slider__value">75 %</span>
+            </div>
+            <input class="range-slider__input" value="75" min="0" max="100" name="loremipsum" type="range">
+          </div>
+          <div class="form__file">
+            <input type="file" id="files" class="form__file-input"/>
+            <label for="files" class="form__file-label">
+              <img src="images/icons/attachment.svg" alt="" class="form__file-label-icon">
+              Прикрепить файл
+            </label>
+          </div>
+          <input type="submit" name="attachments" class="button form__button">
+        </form>
       </div>
     </section>
   </main>

@@ -1,0 +1,82 @@
+.form {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+  grid-template-areas: "input_select input_email input_name"
+                       "slider       slider      input_file"
+                       "  .          submit          .     ";
+
+
+  &__range-slider {
+    grid-area: slider;
+  }
+
+
+  &__button {
+    grid-area: submit;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &__input {
+    outline: none;
+    border: none;
+    height: 48px;
+    background: rgba(255, 255, 255, 0.85);
+    border: 1px solid #FFFFFF;
+    border-radius: 3px;
+    padding: 12px 10px;
+
+    &-email {
+      grid-area: input_email;
+    }
+    &-name {
+      grid-area: input_name;
+    }
+    &-select {
+      grid-area: input_select;
+    }
+  }
+
+  &__file {
+    grid-area: input_file;
+
+    &-input {
+      display: none;
+    }
+
+    &-label {
+      height: 48px;
+      background: #FFFFFF;
+      border: 2px solid #FFFFFF;
+      border-radius: 3px;
+      font-family: 'Lato', sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 15px;
+      line-height: 18px;
+      text-transform: uppercase;
+      transition: .1s all;
+
+      color: #272733;
+
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      justify-content: center;
+
+      &-icon {
+        display: block;
+        height: 20px;
+        width: auto;
+      }
+
+      &:hover {
+        cursor: pointer;
+        border: 2px solid #3E9CDC;
+      }
+    }
+  }
+}

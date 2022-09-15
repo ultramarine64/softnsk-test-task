@@ -8,3 +8,10 @@ menuBtn.addEventListener('click', () => {
     span.classList.toggle('menu__btn-span_active');
   }
 });
+
+let orderFormSliderValue = document.querySelector('.order-making .range-slider__value');
+let orderFormSlider = document.querySelector('.order-making .range-slider__input');
+
+orderFormSlider.addEventListener('input', () => {
+  orderFormSliderValue.textContent = `${orderFormSlider.value} %`;
+});
