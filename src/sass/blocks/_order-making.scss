@@ -54,6 +54,12 @@
   }
 }
 
+@media screen and (min-width: 1920px) {
+  .order-making {
+    background-size: cover;
+  }
+}
+
 @media screen and (max-width: 1400px) {
   .order-making {
     background-position: center;

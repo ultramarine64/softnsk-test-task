@@ -17,6 +17,7 @@
   align-items: center;
   justify-content: center;
   transition: .12s ease-in all;
+  user-select: none;
 
   &:hover {
     color: #3E9CDC;

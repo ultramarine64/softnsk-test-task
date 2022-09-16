@@ -1,7 +1,7 @@
 .main-info {
   height: 850px;
   background: url("../images/main_bg.jpg") no-repeat;
-  background-position: right;
+  background-position: right 0;
 
   &__container {
     max-width: 1172px;
@@ -38,6 +38,12 @@
     display: flex;
     justify-content: start;
     gap: 30px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .main-info {
+    background-size: cover;
   }
 }
 
